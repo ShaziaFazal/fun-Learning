@@ -9,12 +9,12 @@ const Layout = (props) => {
   const handleCloseModal = () => setIsModalVisible(false);
   return (
     <div
-      className=" mx-auto px-16 py-4 bg-cover bg-no-repeat bg-fixed relative"
+      className=" mx-auto px-16 py-4 bg-cover bg-no-repeat bg-fixed relative min-h-[100svh]"
       style={{
         backgroundImage: `url(${require("../../images/background.png")})`,
       }}
     >
-      {window.location.pathname === "/slide2" && (
+      {window.location.pathname === "/slide" && (
         <div onClick={handleOpenModal} className="absolute right-0 top-[40%]">
           <HintIcon />
         </div>
