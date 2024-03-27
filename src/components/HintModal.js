@@ -33,8 +33,7 @@ function HintModal({ isVisible, onCancel }) {
                 <div className="flex gap-4 items-center">
                   <p className="text-center  whitespace-nowrap">Any guesses?</p>
                   <div className="border-2 border-gray-300 bg-white border-dashed pb-2 w-full rounded-lg">
-                    <p className="border-b-2 text-black text-start w-full">
-                      {" "}
+                    <p className="border-b-2 text-black text-start w-full px-3">
                       Setting is the time and place of a story.
                     </p>
                   </div>

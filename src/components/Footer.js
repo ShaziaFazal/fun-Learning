@@ -10,17 +10,12 @@ const Footer = () => {
   const navigate = useNavigate();
 
   const incrementCounter = () => {
-    let newCounter = counter + 1;
-    setCounter(newCounter);
-    navigate(`${newCounter && `/slide${newCounter}`}`);
+    setCounter(2);
+    navigate(`/slide`);
   };
 
   const decrementCounter = () => {
-    if (counter > 1) {
-      let newCounter = counter - 1;
-      setCounter(newCounter);
-      navigate(`${newCounter === 1 ? "/" : `/slide${newCounter}`}`);
-    }
+    navigate("/");
   };
 
   return (
@@ -28,12 +23,12 @@ const Footer = () => {
       <User />
 
       <div className="flex items-center gap-4">
-        <button onClick={decrementCounter} disabled={counter === 1}>
+        <button onClick={decrementCounter}>
           <LeftIcon />
         </button>
         <div className="bg-[#AA1070] font-semibold text-xl border rounded-xl flex items-center">
           <div className="px-4 py-2 text-white border-r border-gray-400">
-            {counter}
+            {window.location.pathname === "/slide" ? 2 : 1}
           </div>
           <div className="px-2">
             <svg

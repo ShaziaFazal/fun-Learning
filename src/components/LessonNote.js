@@ -1,12 +1,12 @@
 const LessonNote = () => {
   return (
     <div
-      className=" py-4 px-10 my-4 bg-cover bg-no-repeat w-full h-full "
+      className="my-4 bg-no-repeat bg-cover  h-40"
       style={{
         backgroundImage: `url(${require("../images/discriptionBG.png")})`,
       }}
     >
-      <p>
+      <p className="py-8 px-10 bg-red">
         For today's lesson, we will try to understand and practice writing the
         setting for our stories. The setting is an important element of every
         fiction story.

@@ -7,7 +7,7 @@ import cloud4 from "../images/clouds/cloud4.png";
 import cloud5 from "../images/clouds/cloud5.png";
 
 const StoryElements = () => {
-  const imgClass = "w-32 h-24 lg:w-40 lg:h-full ";
+  const imgClass = "h-16 w-20 md:w-28 md:h-24 lg:w-40 lg:h-full ";
   return (
     <div className="mb-4 items-center ">
       <div className="flex justify-center">
@@ -22,7 +22,7 @@ const StoryElements = () => {
         story writing. Our aim is to make stories more interesting and exciting.
       </p>
 
-      <div className="p-2 my-4 ">
+      <div className="p-2 my-4  ">
         <div className="bg-[#25A3A1] px-3 border-2 border-gray-300 border-dashed flex gap-12 items-center">
           <p className="text-white">
             There are five elements which make the foundation for story writing.

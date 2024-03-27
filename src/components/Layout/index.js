@@ -14,9 +14,12 @@ const Layout = (props) => {
         backgroundImage: `url(${require("../../images/background.png")})`,
       }}
     >
-      <div onClick={handleOpenModal} className="absolute right-0 top-[40%]">
-        <HintIcon />
-      </div>
+      {window.location.pathname === "/slide2" && (
+        <div onClick={handleOpenModal} className="absolute right-0 top-[40%]">
+          <HintIcon />
+        </div>
+      )}
+
       <HintModal isVisible={isModalVisible} onCancel={handleCloseModal} />
       {props.children}
     </div>
