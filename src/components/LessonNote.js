@@ -1,7 +1,7 @@
 const LessonNote = () => {
   return (
     <div
-      className="my-4 bg-no-repeat bg-cover  h-40"
+      className="my-4 bg-repeat-round bg-cover  h-40"
       style={{
         backgroundImage: `url(${require("../images/discriptionBG.png")})`,
       }}
