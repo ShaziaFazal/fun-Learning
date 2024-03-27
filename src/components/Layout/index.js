@@ -19,9 +19,10 @@ const Layout = (props) => {
           <HintIcon />
         </div>
       )}
-
-      <HintModal isVisible={isModalVisible} onCancel={handleCloseModal} />
-      {props.children}
+      <div className="flex justify-center items-center  min-h-screen">
+        <HintModal isVisible={isModalVisible} onCancel={handleCloseModal} />
+        {props.children}
+      </div>
     </div>
   );
 };
