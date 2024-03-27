@@ -1,17 +1,10 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import week1 from "../images/week1.png";
 
 const Header = () => {
   return (
-    <header className="bg-gray-800 text-white p-4">
-      <h1 className="text-2xl font-bold">My React Tailwind App</h1>
-      <nav className="mt-4">
-        <Link className="mr-4" to="/">
-          Home
-        </Link>
-        <Link to="/about">About</Link>
-      </nav>
-    </header>
+    <div className="flex py-4 px-20 items-center">
+      <img src={week1} alt="week-1" className="h-10" />
+    </div>
   );
 };
 

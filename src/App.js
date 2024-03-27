@@ -1,18 +1,16 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Header from "./components/Header";
-import Home from "./pages/Home";
-import About from "./pages/About";
+import Slide from "./pages/slide";
+import SlideTwo from "./pages/slidetwo";
 
 function App() {
   return (
     <Router>
       <div>
-        <Header />
-        <div className="container mx-auto p-4">
+        <div>
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
+            <Route path="/" exact element={<Slide />} />
+            <Route path="/slide2" element={<SlideTwo />} />
           </Routes>
         </div>
       </div>
